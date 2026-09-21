@@ -23,14 +23,13 @@ st.set_page_config(
 # LOAD MODEL & DATASET
 # -----------------------------
 
-model = joblib.load("credit_risk_model.pkl")
-feature_names = joblib.load("feature_names.pkl")
+model = joblib.load("app/credit_risk_model.pkl")
+feature_names = joblib.load("app/feature_names.pkl")
 
 # -----------------------------
 # LOAD DATASET
 # -----------------------------
-df = pd.read_csv("../data/cs-training.csv")
-
+df = pd.read_csv("data/cs-training.csv")
 
 # -----------------------------
 # MODEL EVALUATION DATA
